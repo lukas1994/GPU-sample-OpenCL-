@@ -11,7 +11,7 @@ else
 	RPTH=-Wl,-rpath,/usr/lib64/beignet
 endif
 
-all: find-platform find-devices add-matrices
+all: find-platform find-devices add-matrices mul-matrices
 
 find-platform: find-platform.c
 	$(CC) $(CFLAGS) $(INCL) find-platform.c $(RPTH) $(LIBS) -o find-platform
@@ -21,3 +21,7 @@ find-devices: find-devices.c
 
 add-matrices: add-matrices.c
 	$(CC) $(CFLAGS) $(INCL) add-matrices.c $(RPTH) $(LIBS) -o add-matrices
+
+mul-matrices: mul-matrices.c
+	$(CC) $(CFLAGS) $(INCL) mul-matrices.c $(RPTH) $(LIBS) -o mul-matrices
+

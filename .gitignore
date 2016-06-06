@@ -1,4 +1,5 @@
 add-matrices
+mul-matrices
 find-devices
 find-platform
 *.pdf
